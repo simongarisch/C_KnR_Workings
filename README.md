@@ -1,2 +1,2 @@
 # C_KnR_Workings
-Going through the code for The C programming Language
+Working through the code for KnR's second edition of "The C programming Language".
