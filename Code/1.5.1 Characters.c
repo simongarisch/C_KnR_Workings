@@ -8,5 +8,5 @@ int main(){
     putchar(c);     // The actual value of EOF is system-dependent, but is commonly -1
     c = getchar();  // One can use Ctrl+D to send EOT character which will force function return -1
   }
-
+  return(0);
 }
