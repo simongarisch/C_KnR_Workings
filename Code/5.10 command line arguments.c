@@ -1,7 +1,7 @@
 // when main is called it is called with two arguments
 // The first (conventionally called argc, for argument count)
 // is the number of command-line arguments the program was
-// invoked with; the second (argv, for argument vector) is a 
+// invoked with; the second (argv, for argument vector) is a
 // pointer to an array of character strings that contain arguments
 
 // ./a.out hello world 
