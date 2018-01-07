@@ -1,6 +1,6 @@
 // the standard header <stdarg.h> contains a set of
 // macro definitions that define how to step through an argument list
-// the type va_list is used to declare a variable tat will refer to each argument in turn
+// the type va_list is used to declare a variable that will refer to each argument in turn
 #include <stdio.h>
 #include <stdarg.h> 
 
