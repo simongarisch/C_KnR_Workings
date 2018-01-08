@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
   FILE *fp;
   void filecopy(FILE *, FILE *);
   
-  if(argc == 1) // no args (just file name), cop standard input
+  if(argc == 1) // no args (just prog name), copy standard input
     filecopy(stdin, stdout);
   else{
     while(--argc > 0){
