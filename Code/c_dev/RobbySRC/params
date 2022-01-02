@@ -1,0 +1,64 @@
+#/***************************************************************************/
+#/*                                                                         */
+#/*                           PARAMS                                        */
+#/*                                                                         */
+#/*                    Parameter file for GA                                */
+#/*                                                                         */
+#/***************************************************************************/
+
+
+# Experiment parameters
+
+NUM_RUNS		1
+
+# GA parameters
+
+NUM_GENERATIONS		500
+
+# Options for selection_method are "fitness proportionate", "linear rank", "pure rank"
+# "sigma scaling", and "elite"
+
+SELECTION_METHOD	"pure rank"
+
+POP_SIZE                200
+
+CHROM_LENGTH		243
+
+MUTATION_RATE           0.005 # probability of mutation at each locus in a chromosome
+
+CROSSOVER_SITES		1
+CROSSOVER_RATE         	1.0 # probability of two parents crossing over
+
+RANK_MAX_WEIGHT		 2.0    # Maximum weight for rank scaling 
+SIGMA_SCALING_MAX_WEIGHT 1.5   # Maximum weight for sigma scaling 
+NUM_ELITE		 50   # fill in if selection method is "elite" 
+
+###########################################################################
+
+# I/O 
+
+# FILL THIS IN WITH A PATH TO A DIRECTORY
+RUN_NUM_DIR    ""
+# FILL THIS IN WITH A PATH TO A DIRECTORY
+OUTPUT_DIR     ""
+SNAPSHOT_INTERVAL			1
+SHORT_PRINT			        TRUE
+LONG_PRINT				FALSE  # Prints all chroms at each gen
+BEST_PRINT				TRUE  # Prints highest fitness chrom at each gen
+
+
+###########################################################################
+# FITNESS FUNCTION
+
+FITNESS_FUNCTION_NAME  	"RobbyTheRobot"
+
+WALL_PENALTY -5   # Points lost for crashing into a wall
+CAN_REWARD 10     # Points gained for picking up a can
+CAN_PENALTY -1    # Points lost for trying to pick up a can in an empty cell 
+NUM_MOVES 200	  # Number of moves a robot makes per session 
+
+NUM_ENVIRONMENTS_FOR_FITNESS 200  # Number of environments each 
+				  # individual is tested on for 
+				  # calculating fitness
+
+
